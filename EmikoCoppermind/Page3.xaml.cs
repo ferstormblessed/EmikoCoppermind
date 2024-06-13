@@ -24,5 +24,22 @@ namespace EmikoCoppermind
         {
             InitializeComponent();
         }
+
+        private void Office_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Rectangle clickedRectangle = sender as Rectangle;
+            string officeName = clickedRectangle.Name;
+
+            // Show pop-up with general data
+            MessageBoxResult result = MessageBox.Show($"{officeName} - General Data\n\nDo you want to open the document?", "Office Information", MessageBoxButton.YesNo);
+
+            /*// Open document if Yes is clicked
+            if (result == MessageBoxResult.Yes)
+            {
+                // Assuming the document is a PDF or similar, open it using default viewer
+                string documentPath = $"{officeName}_document.pdf";
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(documentPath) { UseShellExecute = true });
+            }*/
+        }
     }
 }
