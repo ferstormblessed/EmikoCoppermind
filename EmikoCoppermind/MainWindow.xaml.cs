@@ -22,25 +22,5 @@ namespace EmikoCoppermind
             InitializeComponent();
         }
 
-       
-
-        private void NavigatePage1(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(new Page1());
-            Debug.WriteLine("button 1");
-        }
-
-        private void NavigatePage2(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(new Page2());
-            Debug.WriteLine("button 2");
-        }
-
-        private void NavigatePage3(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Navigate(new Page3());
-            Debug.WriteLine("button 3");
-        }
-
     }
 }

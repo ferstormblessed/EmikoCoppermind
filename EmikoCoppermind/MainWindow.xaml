@@ -7,10 +7,24 @@
         mc:Ignorable="d"
         Title="OfficeMap" Height="500" Width="800">
     <Grid>
-        <Button x:Name="clickmeButton" Content="page 1" HorizontalAlignment="Left" Margin="60,24,0,0" VerticalAlignment="Top" Click="NavigatePage1"/>
-        <Button x:Name="clickmeButton_Copy" Content="page 2" HorizontalAlignment="Left" Margin="145,24,0,0" VerticalAlignment="Top" Click="NavigatePage2"/>
-        <Button x:Name="clickmeButton_Copy1" Content="page 3" HorizontalAlignment="Left" Margin="225,24,0,0" VerticalAlignment="Top" Click="NavigatePage3"/>
-        <Frame x:Name="MainFrame" Content="Frame" Background="#4DEC1111" Width="700" Height="350" NavigationUIVisibility="Hidden" Source="/Page1.xaml"/>
+       
+        <TabControl x:Name="Tabs">
+            <TabItem x:Name="Bauabschnitt_1_tab" Header="Bauabschnitt 1" Width="97">
+                <Grid Background="#FFE5E5E5">
+                    <Frame x:Name="Page_1_Frame" Content="Frame" NavigationUIVisibility="Hidden" Source="/Page1.xaml"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Bauabschnitt_2_tab" Header="Bauabschnitt 2">
+                <Grid Background="#FFE5E5E5">
+                    <Frame x:Name="Page_2_frame" Content="Frame" NavigationUIVisibility="Hidden" Source="/Page2.xaml"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Bauabschnitt_3_tab" Header="Bauabschnitt 3">
+                <Grid Background="#FFE5E5E5">
+                    <Frame x:Name="Page_3_tab" Content="Frame" NavigationUIVisibility="Hidden" Source="/Page3.xaml"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 
