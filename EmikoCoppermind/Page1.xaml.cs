@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace EmikoCoppermind
     /// </summary>
     public partial class Page1 : Page
     {
+
         public Page1()
         {
             InitializeComponent();
@@ -40,6 +42,11 @@ namespace EmikoCoppermind
                 string documentPath = $"{officeName}_document.pdf";
                 System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(documentPath) { UseShellExecute = true });
             }*/
+        }
+
+        private void OpenExcel(object sender, RoutedEventArgs e)
+        {
+            ExcelUtils.OpenExcel(sender, e);
         }
     }
 }

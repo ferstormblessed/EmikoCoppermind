@@ -24,6 +24,11 @@
                     <Frame x:Name="Page_3_tab" Content="Frame" NavigationUIVisibility="Hidden" Source="/Page3.xaml"/>
                 </Grid>
             </TabItem>
+            <TabItem x:Name="TestDB" Header="DB">
+                <Grid Background="#FFE5E5E5">
+                    <Frame x:Name="TestDB_tab" Content="Frame" NavigationUIVisibility="Hidden" Source="/Page4.xaml"/>
+                </Grid>
+            </TabItem>
         </TabControl>
 
     </Grid>

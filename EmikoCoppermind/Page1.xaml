@@ -8,12 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1" >
 
-    <Grid Background="White" >
+    <Grid Background="White" Width="801" >
         <Viewbox Stretch="Uniform">
             <Canvas Name="OfficeCanvas" Width="800" Height="600" Background="#FF001484">
 
                 <!-- Example Office Area -->
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hygieneraum" Fill="LightBlue" Width="241" Height="346" Canvas.Left="0" Canvas.Top="92"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hygieneraum_rect" Width="241" Height="346" Canvas.Left="0" Canvas.Top="92" Stroke="White" StrokeThickness="2"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Buchhaltung_1" Fill="LightGreen" Width="125" Height="125" Canvas.Left="0" Canvas.Top="475"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Buchhaltung_2" Fill="#FFE89A64" Width="87.5" Height="92" Canvas.Left="125" Canvas.Top="508"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Besprechungsraum" Fill="#FFDC8CD9" Width="150" Height="92" Canvas.Left="212.5" Canvas.Top="508"/>
@@ -34,8 +34,13 @@
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Produktionshalle" Fill="#FFDC8D8D" Width="471" Height="438" Canvas.Left="241" Canvas.Top="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Kueche" Fill="#FF7A72DA" Width="175" Height="70" Canvas.Left="125" Canvas.Top="438" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Laden" Fill="#FFB0DC8D" Width="88" Height="112" Canvas.Left="712" Canvas.Top="396" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="Hygieneraum_Text" Canvas.Left="84" TextWrapping="Wrap" Text="Hygienraum" Canvas.Top="224" Width="73" Background="#FF001484" BorderBrush="{x:Null}" Foreground="White" SelectionTextBrush="#FFE6FF03" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="Hygieneraum" Content="Open Excel" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="89" Canvas.Top="270" Click="OpenExcel" Foreground="Black" Background="White"/>
 
             </Canvas>
         </Viewbox>
+        <DataGrid Name="ExcelDataGrid" AutoGenerateColumns="True" Canvas.Top="18" Canvas.Left="-107" Visibility="Collapsed" Width="400" Height="398" Background="#FFB019F9">
+            <Button Content="Close" HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top" Visibility="Collapsed"/>
+        </DataGrid>
     </Grid>
 </Page>
