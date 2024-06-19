@@ -8,34 +8,46 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1" >
 
-    <Grid Background="White" Width="801" >
+    <Grid Background="Black" Width="801" >
         <Viewbox Stretch="Uniform">
             <Canvas Name="OfficeCanvas" Width="800" Height="600" Background="#FF001484">
 
                 <!-- Example Office Area -->
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hygieneraum_rect" Width="241" Height="346" Canvas.Left="0" Canvas.Top="92" Stroke="White" StrokeThickness="2"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Buchhaltung_1" Fill="LightGreen" Width="125" Height="125" Canvas.Left="0" Canvas.Top="475"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Buchhaltung_2" Fill="#FFE89A64" Width="87.5" Height="92" Canvas.Left="125" Canvas.Top="508"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Besprechungsraum" Fill="#FFDC8CD9" Width="150" Height="92" Canvas.Left="212.5" Canvas.Top="508"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hygieneraum" Width="241" Height="346" Canvas.Left="0" Canvas.Top="92" Stroke="White" StrokeThickness="2" Fill="#FF001484"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Buchhaltung_1" Fill="#FF001484" Width="125" Height="125" Canvas.Left="0" Canvas.Top="475" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Buchhaltung_2" Fill="#FF001484" Width="87.5" Height="92" Canvas.Left="125" Canvas.Top="508" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Besprechungsraum" Fill="#FF001484" Width="150" Height="92" Canvas.Left="212.5" Canvas.Top="508" Stroke="White" StrokeThickness="2"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Personalleitung" Fill="#FFE3E49A" Width="125" Height="92" Canvas.Left="362.5" Canvas.Top="508"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Telefonzetrale_2" Fill="#FFDC8D8D" Width="125" Height="92" Canvas.Left="487.5" Canvas.Top="508"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Telefonzentrale_1" Fill="#FFA39AE4" Width="125" Height="92" Canvas.Left="612.5" Canvas.Top="508"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="IBC_Reinigungsraum" Fill="LightBlue" Width="87.5" Height="62.5" Canvas.Left="712.5" Canvas.Top="0"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hausanschlussraum" Fill="LightGreen" Width="87.5" Height="46" Canvas.Left="712.5" Canvas.Top="62.5"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_1" Fill="#FFE89A64" Width="87.5" Height="46" Canvas.Left="712.5" Canvas.Top="108.5"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hygieneschleuse" Fill="#FFDC8CD9" Width="87.5" Height="69" Canvas.Left="712.5" Canvas.Top="154.5"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_2" Fill="#FFE3E49A" Width="87.5" Height="46" Canvas.Left="712.5" Canvas.Top="223.5"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Vertrieb" Fill="#FFDC8D8D" Width="87.5" Height="69" Canvas.Left="712.5" Canvas.Top="269.5"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Heizung" Fill="#FFA39AE4" Width="87.5" Height="57.5" Canvas.Left="712.5" Canvas.Top="338.5"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="IBC_Reinigungsraum" Fill="#FF001484" Width="87.5" Height="62.5" Canvas.Left="712.5" Canvas.Top="0" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hausanschlussraum" Fill="#FF001484" Width="87.5" Height="46" Canvas.Left="712.5" Canvas.Top="62.5" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_1" Fill="#FF001484" Width="87.5" Height="46" Canvas.Left="712.5" Canvas.Top="108.5" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Hygieneschleuse" Fill="#FF001484" Width="87.5" Height="69" Canvas.Left="712.5" Canvas.Top="154.5" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_2" Fill="#FF001484" Width="87.5" Height="46" Canvas.Left="712.5" Canvas.Top="223.5" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Vertrieb" Fill="#FF001484" Width="87.5" Height="69" Canvas.Left="712.5" Canvas.Top="269.5" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Heizung" Fill="#FF001484" Width="87.5" Height="57.5" Canvas.Left="712.5" Canvas.Top="338.5" Stroke="White" StrokeThickness="2"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_3" Fill="LightBlue" Width="57" Height="34" Canvas.Left="300" Canvas.Top="438"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_4" Fill="LightGreen" Width="57" Height="34" Canvas.Left="357" Canvas.Top="438"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_5" Fill="#FFE89A64" Width="57" Height="34" Canvas.Left="414" Canvas.Top="438"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Archiv" Fill="#FFDC8CD9" Width="175" Height="34" Canvas.Left="471" Canvas.Top="438"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Produktionshalle" Fill="#FFDC8D8D" Width="471" Height="438" Canvas.Left="241" Canvas.Top="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Kueche" Fill="#FF7A72DA" Width="175" Height="70" Canvas.Left="125" Canvas.Top="438" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Laden" Fill="#FFB0DC8D" Width="88" Height="112" Canvas.Left="712" Canvas.Top="396" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <TextBox x:Name="Hygieneraum_Text" Canvas.Left="84" TextWrapping="Wrap" Text="Hygienraum" Canvas.Top="224" Width="73" Background="#FF001484" BorderBrush="{x:Null}" Foreground="White" SelectionTextBrush="#FFE6FF03" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <Button x:Name="Hygieneraum" Content="Open Excel" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="89" Canvas.Top="270" Click="OpenExcel" Foreground="Black" Background="White"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Produktionshalle" Width="471" Height="438" Canvas.Left="241" Canvas.Top="0" HorizontalAlignment="Center" VerticalAlignment="Center" Stroke="White" StrokeThickness="2" Fill="#FF001484"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Kueche" Fill="#FF001484" Width="175" Height="70" Canvas.Left="125" Canvas.Top="438" HorizontalAlignment="Center" VerticalAlignment="Top" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Laden" Fill="#FF001484" Width="88" Height="112" Canvas.Left="712" Canvas.Top="396" HorizontalAlignment="Left" VerticalAlignment="Center" Stroke="White" StrokeThickness="2"/>
+                <TextBox x:Name="Hygieneraum_Text" Canvas.Left="84" TextWrapping="Wrap" Text="Hygienraum" Canvas.Top="256" Width="73" Background="#FF001484" BorderBrush="{x:Null}" Foreground="White" SelectionTextBrush="#FFE6FF03" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBox x:Name="Produktionshalle_text" Canvas.Left="428" TextWrapping="Wrap" Text="Produktionshalle" Canvas.Top="210" Width="97" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="{x:Null}"/>
+                <TextBox x:Name="IBC_Reinigunsraum_text" Canvas.Left="724" TextWrapping="Wrap" Text="IBC Reinigungsraum" Canvas.Top="20" Width="64" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Top" TextChanged="IBC_Reinigunsraum_text_TextChanged" FontSize="8"/>
+                <TextBox x:Name="Hausanschlussraum_text" Canvas.Left="722" TextWrapping="Wrap" Text="Hausanschlussraum" Canvas.Top="80" Width="68" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Top" TextChanged="IBC_Reinigunsraum_text_Copy_TextChanged" FontSize="7"/>
+                <TextBox x:Name="WC_1_text" Canvas.Left="742" TextWrapping="Wrap" Text="WC" Canvas.Top="123" Width="28" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" TextChanged="IBC_Reinigunsraum_text_Copy_TextChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="Hygieneschleuse_text" Canvas.Left="722" TextWrapping="Wrap" Text="Hygieneschleuse" Canvas.Top="183" Width="68" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" TextChanged="IBC_Reinigunsraum_text_Copy_TextChanged" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                <TextBox x:Name="WC_2_text" Canvas.Left="742" TextWrapping="Wrap" Text="WC" Canvas.Top="238" Width="28" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" TextChanged="IBC_Reinigunsraum_text_Copy_TextChanged" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="Vertrieb_text" Canvas.Left="732" TextWrapping="Wrap" Text="Vertrieb" Canvas.Top="295" Width="49" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" TextChanged="IBC_Reinigunsraum_text_Copy_TextChanged" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="Heizung_text" Canvas.Left="731" TextWrapping="Wrap" Text="Heizung" Canvas.Top="358" Width="50" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" TextChanged="IBC_Reinigunsraum_text_Copy_TextChanged" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="Heizung_text_Copy" Canvas.Left="736" TextWrapping="Wrap" Text="Laden&#xD;&#xA;" Canvas.Top="443" Width="40" Background="{x:Null}" Foreground="White" SelectionBrush="#FFF2FF06" BorderBrush="{x:Null}" TextChanged="IBC_Reinigunsraum_text_Copy_TextChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Height="18"/>
+                <TextBox x:Name="Buchhaltung_1_text" Canvas.Left="19" TextWrapping="Wrap" Text="Buchhaltung_1" Canvas.Top="529" Width="87" Background="#FF001484" BorderBrush="{x:Null}" Foreground="White" SelectionTextBrush="#FFE6FF03" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="Buchhaltung_2_text" Canvas.Left="128" TextWrapping="Wrap" Text="Buchhaltung_2" Canvas.Top="546" Width="82" Background="#FF001484" BorderBrush="{x:Null}" Foreground="White" SelectionTextBrush="#FFE6FF03" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="Buchhaltung_1_text_Copy_TextChanged" FontSize="11" RenderTransformOrigin="0.753,0.501"/>
+                <TextBox x:Name="Kueche_text" Canvas.Left="192" TextWrapping="Wrap" Text="Küche" Canvas.Top="464" Width="40" Background="#FF001484" BorderBrush="{x:Null}" Foreground="White" SelectionTextBrush="#FFE6FF03" TextChanged="Buchhaltung_1_text_Copy_TextChanged" RenderTransformOrigin="0.753,0.501" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="Kueche_text_Copy" Canvas.Left="231" TextWrapping="Wrap" Text="Besprechungsraum" Canvas.Top="545" Width="113" Background="#FF001484" BorderBrush="{x:Null}" Foreground="White" SelectionTextBrush="#FFE6FF03" TextChanged="Buchhaltung_1_text_Copy_TextChanged" RenderTransformOrigin="0.753,0.501" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
             </Canvas>
         </Viewbox>

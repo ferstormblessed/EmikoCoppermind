@@ -41,10 +41,9 @@ namespace EmikoCoppermind
             return f;
         }
 
-        static public void OpenExcel(object sender, RoutedEventArgs e)
+        static public void OpenExcel(string filename)
         {
-            string nameFile = ((Button)sender).Name;
-            string filepath = getCSVFile(nameFile);
+            string filepath = getCSVFile(filename);
             Debug.WriteLine("----------------------------------");
             Debug.WriteLine(filepath);
             Debug.WriteLine("----------------------------------");
