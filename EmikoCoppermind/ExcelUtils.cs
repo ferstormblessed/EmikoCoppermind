@@ -49,11 +49,13 @@ namespace EmikoCoppermind
             Debug.WriteLine("----------------------------------");
             if (filepath == "")
             {
-                throw new Exception("No file related to this room");
+                Debug.WriteLine("Error: No related file");
+                return;
             }
 
             DataTable excelData = ReadExcelFile(filepath);
             ExcelPopupWindow popup = new ExcelPopupWindow(excelData, filepath);
+
             popup.ShowDialog();
         }
 
@@ -63,7 +65,7 @@ namespace EmikoCoppermind
 
             using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
             {
-                using (var reader = ExcelReaderFactory.CreateCsvReader(stream))
+                using (var reader = ExcelReaderFactory.CreateReader(stream))
                 {
                     var result = reader.AsDataSet(new ExcelDataSetConfiguration()
                     {

@@ -8,17 +8,23 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid Background="White" >
+    <Grid Background="Black" >
         <Viewbox Stretch="Uniform">
             <Canvas Name="OfficeCanvas" Width="800" Height="600" Background="#FF001484">
 
                 <!-- Example Office Area -->
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Halle_2" Fill="LightBlue" Width="740" Height="438" Canvas.Left="30" Canvas.Top="0"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_1" Fill="LightGreen" Width="160" Height="46" Canvas.Left="90" Canvas.Top="484"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="EDV" Fill="#FFE89A64" Width="220" Height="70" Canvas.Left="30" Canvas.Top="530"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Vertrieb" Fill="#FFDC8CD9" Width="140" Height="116" Canvas.Left="250" Canvas.Top="484" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Geschaeftsfuehrung_2" Fill="#FFE3E49A" Width="185" Height="116" Canvas.Left="390" Canvas.Top="484"/>
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Geschaeftsfuehrung_1" Fill="#FFDC8D8D" Width="195" Height="116" Canvas.Left="575" Canvas.Top="484" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Halle2" Width="740" Height="438" Canvas.Left="30" Canvas.Top="0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_1" Fill="#FF001484" Width="160" Height="46" Canvas.Left="90" Canvas.Top="484" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="EDV" Fill="#FF001484" Width="220" Height="70" Canvas.Left="30" Canvas.Top="530" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Vertrieb2" Fill="#FF001484" Width="140" Height="116" Canvas.Left="250" Canvas.Top="484" HorizontalAlignment="Center" VerticalAlignment="Top" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Geschaeftsfuehrung2" Fill="#FF001484" Width="185" Height="116" Canvas.Left="390" Canvas.Top="484" Stroke="White" StrokeThickness="2"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Geschaeftsfuehrung1" Fill="#FF001484" Width="195" Height="116" Canvas.Left="575" Canvas.Top="484" HorizontalAlignment="Left" VerticalAlignment="Center" Stroke="White" StrokeThickness="2"/>
+                <Label x:Name="Halle_1" Content="Halle_2&#xD;&#xA;" Canvas.Left="378" Canvas.Top="206" Foreground="White" HorizontalAlignment="Center" Height="26" VerticalAlignment="Center"/>
+                <Label x:Name="WC_1_text" Content="WC" Canvas.Left="156" Canvas.Top="494" Foreground="White" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="EDV_text" Content="EDV" Canvas.Left="124" Canvas.Top="552" Foreground="White" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="Vertrieb_text" Content="Vertrieb_2" Canvas.Left="291" Canvas.Top="529" Foreground="White" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="Geschaeftsfuehrung_1_text" Content="Geschäftsführung_1" Canvas.Left="428" Canvas.Top="529" Foreground="White" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label x:Name="Geschaeftsfuehrung_2_text" Content="Geschäftsführung_2" Canvas.Left="618" Canvas.Top="529" Foreground="White" Height="26" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
             </Canvas>
         </Viewbox>

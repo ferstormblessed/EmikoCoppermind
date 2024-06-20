@@ -11,7 +11,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <DataGrid Name="ExcelDataGrid" AutoGenerateColumns="True" Margin="10" />
+        <DataGrid Name="ExcelDataGrid" Margin="10" />
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
             <Button Name="OpenInExcelButton" Content="Open in Excel" Width="100" Margin="5" Click="OpenInExcelButton_Click" />
             <Button Name="CloseButton" Content="Close" Width="100" Margin="5" Click="CloseButton_Click" />
