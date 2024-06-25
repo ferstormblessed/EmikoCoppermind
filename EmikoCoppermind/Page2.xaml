@@ -13,7 +13,7 @@
             <Canvas Name="OfficeCanvas" Width="800" Height="600" Background="#FF001484">
 
                 <!-- Example Office Area -->
-                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Halle2" Width="740" Height="438" Canvas.Left="30" Canvas.Top="0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Halle2" Width="740" Height="438" Canvas.Left="30" Canvas.Top="0" Stroke="White" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Top" Fill="#FF001484"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="WC_1" Fill="#FF001484" Width="160" Height="46" Canvas.Left="90" Canvas.Top="484" Stroke="White" StrokeThickness="2"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="EDV" Fill="#FF001484" Width="220" Height="70" Canvas.Left="30" Canvas.Top="530" Stroke="White" StrokeThickness="2"/>
                 <Rectangle MouseLeftButtonDown="Office_MouseLeftButtonDown" x:Name="Vertrieb2" Fill="#FF001484" Width="140" Height="116" Canvas.Left="250" Canvas.Top="484" HorizontalAlignment="Center" VerticalAlignment="Top" Stroke="White" StrokeThickness="2"/>
