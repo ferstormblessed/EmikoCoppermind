@@ -17,7 +17,12 @@ namespace EmikoCoppermind
         static private string getCSVFile(string fileToSearch)
         {
             //string fileToSearch = "email-list";
-            string directoryPath = "C:\\Users\\f.camacho\\source\\repos\\EmikoCoppermind\\EmikoCoppermind\\ExcelFiles\\";
+            string dir = Directory.GetCurrentDirectory();
+            Debug.WriteLine("currentdir");
+            Debug.WriteLine(dir);
+            string directoryPath = dir + "\\ExcelFiles\\";
+            Debug.WriteLine("currentdir + dir");
+            Debug.WriteLine(directoryPath);
             int lenDirectory = directoryPath.Length;
             DirectoryInfo directory = new DirectoryInfo(directoryPath);
 
