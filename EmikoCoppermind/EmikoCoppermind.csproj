@@ -24,21 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="SQLite.Designer">
-      <HintPath>\\srv-ad\profiles$\f.camacho\Downloads\sqlite-netFx46-binary-bundle-x64-2015-1.0.118.0\SQLite.Designer.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite">
-      <HintPath>\\srv-ad\profiles$\f.camacho\Downloads\sqlite-netFx46-binary-bundle-x64-2015-1.0.118.0\System.Data.SQLite.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.EF6">
-      <HintPath>\\srv-ad\profiles$\f.camacho\Downloads\sqlite-netFx46-binary-bundle-x64-2015-1.0.118.0\System.Data.SQLite.EF6.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data.SQLite.Linq">
-      <HintPath>\\srv-ad\profiles$\f.camacho\Downloads\sqlite-netFx46-binary-bundle-x64-2015-1.0.118.0\System.Data.SQLite.Linq.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
   </ItemGroup>
