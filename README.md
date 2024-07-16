@@ -6,4 +6,4 @@ The app function as a graphical interface to facilitate and the book keeping of 
 
 ## Technologies
 - .NET and C# through the creation of a WPF application
-- Excel: Use as main database due to client request
+- Excel: Used as main database due to client request
